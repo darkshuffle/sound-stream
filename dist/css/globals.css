@@ -1,0 +1,107 @@
+/*Box sizing*/
+*. *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*Body resets and fancy font*/
+body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.music_player{
+  position: relative;
+}
+
+.search div, .search input {
+  width: 100%;
+}
+
+.search input {
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+  outline: none;
+  background: rgb(255,255,255);
+  padding: 10px;
+}
+
+.details h3 {
+  text-align: center;
+  padding: 20px 10px;
+  margin: 0;
+  color: black;
+}
+
+.player {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  margin-top: 60px;
+}
+
+.player div {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.player .player__main button:hover {
+  color: rgba(0, 168, 131, 0.8);
+  background-color: inherit;
+  border: none;
+}
+
+.player .player__back button,
+.player .player__forward button {
+  background: transparent;
+  border: none;
+  width: 30px;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 20px;
+  outline: none;
+  color: rgba(0,0,0,0.5)
+}
+
+.player .player__main button {
+  background-color: rgba(0, 168, 131, 0.8);
+  color: rgb(255,255,255);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 30px;
+  outline: none;
+  padding-left: 10px;
+}
+
+.player .player__back button:hover,
+.player .player__forward button:hover {
+  color: rgba(0, 168, 131, 0.8);
+}
+
+.progress {
+  text-align: center;
+  margin-top: 10px;
+  color: rgba(0,0,0,0.5);
+}
+
+.progress progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 100%;
+  height: 8px;
+}
+
+.progress progress[value]::-webkit-progress-bar {
+  background-color: white;
+  box-shadow: 0 -2px 2px rgba(0,0,0,0.25) inset;
+}
+
+.progress progress[value]::-webkit-progress-value {
+    background-color: rgba(0, 168, 131, 0.8);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 -2px 2px rgba(0,0,0,0.25) inset;
+}
