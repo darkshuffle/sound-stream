@@ -13,36 +13,46 @@ body {
   position: relative;
 }
 
-.search div, .search input {
+.search div{
   width: 100%;
-}
-
-.search input {
   border: none;
   box-shadow: 0 2px 5px rgba(0,0,0,0.25);
   outline: none;
-  background: rgb(255,255,255);
-  padding: 10px;
+  background: rgba(0, 168, 131, 0.8);
+  padding: 5px 0px 5px 0px;
+}
+
+.search input {
+  width: 80%;
+  margin-left: 10%;
+  padding: 5px 5px 5px 5px;
+  background: rgb(250,250,255);
+  border: none;
+  border-radius: 2px;
 }
 
 .details h3 {
   text-align: center;
-  padding: 20px 10px;
+  padding: 10px 10px;
   margin: 0;
-  color: black;
+  width: auto;
+  color: rgba(0,0,0,0.6);
 }
 
 .player {
   display: flex;
-  text-align: center;
-  align-content: center;
-  margin-top: 60px;
+  justify-content: center;
 }
 
 .player div {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.player__details {
+  width: 100%;
+  margin-top: 20px;
 }
 
 .player .player__main button:hover {
@@ -58,9 +68,9 @@ body {
   width: 30px;
   height: 50px;
   border-radius: 100%;
-  font-size: 20px;
+  font-size: 18px;
   outline: none;
-  color: rgba(0,0,0,0.5)
+  color: rgba(0,0,0,0.6)
 }
 
 .player .player__main button {
@@ -81,9 +91,11 @@ body {
 }
 
 .progress {
-  text-align: center;
+  width: 100%;
+  text-align: right;
   margin-top: 10px;
-  color: rgba(0,0,0,0.5);
+  font-size: 14px;
+  color: rgba(0,0,0,0.4);
 }
 
 .progress progress[value] {

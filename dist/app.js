@@ -21532,8 +21532,12 @@ var App = function (_React$Component) {
           position: '0.3',
           elapsed: '00:20',
           total: '01:00' }),
-        _react2.default.createElement(_player2.default, null),
-        _react2.default.createElement(_details2.default, { title: 'Track title' })
+        _react2.default.createElement(
+          "div",
+          { className: "player_details" },
+          _react2.default.createElement(_player2.default, null),
+          _react2.default.createElement(_details2.default, { title: 'Track title' })
+        )
       );
     }
   }]);
@@ -21713,15 +21717,16 @@ var Progress = function (_React$Component) {
             return _react2.default.createElement(
                 "div",
                 { className: "progress" },
+                _react2.default.createElement("progress", { value: this.props.position, max: "1" }),
                 _react2.default.createElement(
                     "span",
                     { className: "player__time-elapsed" },
                     this.props.elapsed
                 ),
-                _react2.default.createElement("progress", { value: this.props.position, max: "1" }),
                 _react2.default.createElement(
                     "span",
                     { className: "player__time-total" },
+                    "/",
                     this.props.total
                 )
             );

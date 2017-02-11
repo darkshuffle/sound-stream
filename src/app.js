@@ -17,8 +17,10 @@ class App extends React.Component {
         position={'0.3'}
         elapsed={'00:20'}
         total={'01:00'}/>
+        <div className="player_details">
         <Player />
         <Details title={'Track title'} />
+        </div>
       </div>
        );
    }
